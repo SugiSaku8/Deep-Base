@@ -20,6 +20,6 @@ if (process.argv.includes('-help')) {
   console.log('   - Example: ds.setVersionConfig({ family: { version: "1.0.0" } });');
 }
 if (process.argv.includes('-version')) {
-  const version = versionManager.getVersion();
+  const version = 'Deep-Base Version 6.0.0\nStatus: Stable version\nOriginal source: Deep-School'
   console.log('Version:', version);
 }
