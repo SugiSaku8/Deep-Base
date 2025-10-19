@@ -2,6 +2,7 @@ import * as coreConfig from './core/config.js';
 import * as coreLang from './core/lang.js';
 import * as coreSecurity from './core/security.js';
 import * as coreUtils from './core/utils.js';
+import * as asterbase from './core/asterbase.js';
 import { versionManager } from './core/version.js';
 //
 
@@ -10,6 +11,7 @@ window.coreLang = coreLang;
 window.coreSecurity = coreSecurity;
 window.coreUtils = coreUtils;
 window.versionManager = versionManager;
+window.asterbase = asterbase;
 
 function applyLangToDOM() {
   const { t } = window.coreLang;
