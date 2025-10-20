@@ -1,6 +1,12 @@
 const core_build = class{
   constructor(){
-    
+    if(!window.db){
+      console.error("Error! Deep-Base has not been initialized.");
+      console.error("Return Status:2")
+      return 2;
+    }else{
+      
+    }
   }
   generate_config(type){
     switch(type){
@@ -12,7 +18,9 @@ Please check db.sandbox.build.help().`);
     }
   }
   *generate(){
-    yeild;
+    yield this.config = this.generate_config("basic_config");
+     
+  }
   }
 };
 export default core_build;
