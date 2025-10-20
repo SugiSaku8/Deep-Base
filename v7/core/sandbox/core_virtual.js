@@ -1,9 +1,5 @@
 const core_virtual = class{
   contructor(callback,v_default) {
-  const iframe = document.getElementById('sandbox');
-  if (!iframe) {
-  
-  }
 
   // iframeが完全にロードされた後にコードを実行
   iframe.onload = function () {
